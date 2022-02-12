@@ -1,0 +1,224 @@
+/*-----------------WHOLE HTML DOCUMENT------------*/
+
+*{
+    margin:  10px;
+    padding: 0px;
+}
+html{
+    color: #333333;
+    font-family: 'Arial' , 'sans-serif' ;
+    font-size: 25px;
+    font-weight:200;
+}
+
+/*------------HEADER------------------*/
+
+#header{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/slika1.png);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+    margin-top: 0px;
+} 
+
+h1, p {
+    width: auto;
+    height: auto;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    word-spacing: 3px;  
+}
+
+
+h1{
+    color: #0f625e;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-left: 300px;  
+   margin-top: 200px; 
+   text-shadow: 2px 2px white;
+
+
+}
+
+header > p {
+    text-shadow: 2px 2px gray;
+    color: white;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+
+nav {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*-----------BUTTONS-------------*/
+
+.btn:link,
+.btn:visited {
+    margin-top: 200px;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+    background-color: #636e72;
+    color: #fff;
+    border: 1px solid #636e72;
+    margin-right: 15px;
+}
+
+.btn:active,
+.btn:hover{
+    border: 1px solid #b2bec3;
+    background-color: #b2bec3;
+}
+
+/*------------LINKOVI---------------*/
+
+a:link,
+a:visited {
+color: #0f625e;
+text-decoration: none;
+padding-bottom: 1px;
+border-bottom: 1px solid #0f625e;
+transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+ color: #0f625e;
+ border-bottom: 1px solid transparent;
+}
+
+
+/*-------------------ASIDE----------------*/
+
+aside{
+    width: 24%;
+    background-color: #1cbbb2;
+    float: right;
+}
+
+.aside-item{
+    font-style: italic;
+    font-size: 20px;
+    margin-left: 10%;
+}
+aside dt{
+  font-weight: bold;
+}
+
+
+/*---------------FORM--------------------*/
+.forma{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+}
+
+article > h3{
+    margin-left: auto;
+    margin-right: auto;
+}
+ /*---------------FOOTER--------------------*/
+
+
+footer {
+    margin-top: 20vh;
+    font-size: 17px;
+    text-align: center;
+  }
+
+ /*---------------ICONS---------------------*/
+
+ .fa {
+ margin-top: -20px;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*----------------------CHAT---------------------------*/
+ /*---------------SLAJDOVI--------------------*//*novo*/
+ .open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

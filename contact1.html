@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kontakt informacije</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style6.css">
+	
+	<script type="text/javascript" src="assets/app.js"></script>
+</head>
+<body>
+	<header id="header">
+		<nav>
+			<a href="index.html" class="btn btn-full">Početna stranica</a>
+			<a href="about.html" class="btn btn-full">O nama</a> 
+			<a href="gallery.html" class="btn btn-full">Poslovi</a>
+		</nav>
+
+	 	<h1>Studentski biro</h1>
+	 		<p><strong><em>Kontakt informacije za lakšu suradnju:</em></strong></p>
+	</header>
+
+	<main class="main">
+		<div class="flex-item-div">
+			<h3>Naša adresa:</h3>
+			<p class="paragraf">
+				Nalazimo se u blizini većine fakulteta Univerziteta u Tuzli, tačnije u ulici Univerzitetska bb, prekoputa TC Tuzlanka. Našu lokaciju možete vidjeti na idućoj slici, a klikom na istu bit ćete proslijeđeni na Google-ove mape sa preciznom lokacijom. 
+				<a href="https://www.google.com/maps/place/Studentski+Servis/@44.5423193,18.6098174,13z/data=!4m9!1m2!2m1!1sstudentski+biro+tuzla!3m5!1s0x475ead1aa76c4ab3:0x1294bf9c4e4cd720!8m2!3d44.538084!4d18.6615668!15sChVzdHVkZW50c2tpIGJpcm8gdHV6bGGSARxzdHVkZW50c19zdXBwb3J0X2Fzc29jaWF0aW9u"> <img src="images/slika1.png" width="300" height="150"> </a> <br>
+			</p>
+		</div>
+
+		<div class="flex-item-div">
+			<h3>Brojevi telefona na koje nas možete kontaktirati:</h3>
+			<p class="paragraf">
+				<strong>Direktorica: </strong> 060111122 <br>
+				<strong>Sektretar: </strong> 062223482 <br>
+				<strong>Služba za studente: </strong> 060199122 <br>
+				<strong>Besplatni telefon: </strong> 06080800 <br>
+				Dostupni smo na društvenim mrežama koje ćete pronaći na stranici. U nastavku možete ispuniti formu za prijavu na Biro, a Vašu potvrdu ćete dobiti na adresu koju upišete, u roku od 3 dana. 
+			</p>
+		</div>
+	</main>
+
+	<aside class="aside">
+		<div class="aside-item">
+			<h3>Na idućim linkovima pronaći ćete naše profile na društvenim mrežama:</h3>
+			<p class="aside-item">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<a href="https://www.facebook.com/profile.php?id=100008333760911" class="fa fa-facebook"> Facebook profil </a> <br>
+		<a href="#" class="fa fa-twitter"> Twitter profil</a> <br>
+		<a href="#" class="fa fa-instagram"> Instagram profil</a>	
+			</p>
+		</div>
+	</aside>
+
+	<article class="article">
+		<h3 class="article-item">Radno vrijeme poslovnica:</h3>
+		<table class="tb-item">	
+			<tr>
+				<th>
+					Tuzla
+				</th>
+
+				<th>
+					Sarajevo
+				</th>
+
+				<th>
+					Zenica
+				</th>
+				<th>
+					Mostar
+				</th>
+				<th>
+					Banja Luka
+				</th>
+			</tr>
+
+			<tr>
+				<td>
+					PON-PET
+				</td>
+				<td>
+					PON-PET
+				</td>
+
+				<td>
+					PON-ČET
+				</td>
+
+				<td>
+					PON-PET
+				</td>
+				<td>
+					PON-PET
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					08:00-14:00
+				</td>
+				<td>
+					08:00-14:00
+				</td>
+
+				<td>
+					08:00-16:00
+				</td>
+
+				<td>
+					08:00-14:00
+				</td>
+				<td>
+					09:00-17:00
+				</td>
+			</tr>
+
+			</table>
+	</article>
+
+	<article>
+		<h3>Forma za prijavu na Biro:</h3>
+		<div class="forma">
+			<form>
+				<label>Korisnik:</label> <br>
+				<input type="text" name="ime" placeholder="Vase ime:"><br>
+				<input type="text" name="prezime" placeholder="Vase prezime:"><br>
+				<input type="email" name="email" placeholder="Vas email:" required><br>
+			</form>
+			<form>
+				<label>Adresa:</label> <br>
+				<input type="text" name="adresa-stanovanja" placeholder="Vasa adresa stanovanja:" id="adresa_stan"><br>
+				<input type="text" name="zip" placeholder="Postanski broj:" id="zip"><br>
+				<input type="text" name="ime" placeholder="Grad:" id="grad"><br>
+				<input type="checkbox" name="adresa" value="adresa" id="dugme">
+			<label for="adresa"> Adresa dostave je ista kao adresa stanovanja</label><br>
+			</form>
+			<form>
+				<label>Adresa dostave:</label> <br>
+				<input type="text" name="adresa-stanovanja" placeholder="Adresa dostave:" id="adresa_dost"><br>
+				<input type="text" name="zip" placeholder="Postanski broj:" id="zip1"><br>
+				<input type="text" name="ime" placeholder="Grad:" id="grad1"><br>
+				<button id="submit">Submit</button>
+			</form>
+		</div>
+		<div class="hidden">
+			
+		</div>
+	</article>
+
+	<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+		<footer class="footer">
+		<h4>FAQ - često postavljena pitanja možete pronaći na<a href="about.html">linku.</a>Pronađite nas i na:</h4>
+		
+		<p>Copyright &copy; 2021 by Majra. All rights reserved.</p>
+	</footer>
+</body>
+</html>

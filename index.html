@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script type="text/javascript" src="assets/app.js"></script>
+
+	<title> Studentski biro </title>
+</head>
+
+<body>
+	<header id="header">
+			<nav id="nav">
+				<a href="about.html" class="btn btn-full">O nama</a>
+				<a href="gallery.html" class="btn btn-full">Poslovi</a> 
+				<a href="contact.html" class="btn btn-full">Kontakt</a>
+			</nav>	
+
+			<h1>Studentski biro</h1>
+		 		<p><strong><em>Stranica namijenjena studentima za pronalazak posla!</em></strong></p>
+	</header>
+	
+
+	<main class="main">
+		<div class="flex-item-div">
+			<h3>Ko smo mi?</h3>
+				<p class="paragraf">Studentski biro u Tuzli postojao je i prije 18 godina. Tokom svih tih godina studenti i studentice su radili razne poslove poput: pranja suđa u restoranima, utovara i istovara robe, ali i poslova u raznim buticima. No sada se došlo na ideju da naš biro počne studentima omogućavati bolje poslove i bolje uslove. Na koji je to način moguće pogledajte <a href="about.html">ovdje. </a> </p>
+		</div>
+		<div class="flex-item-div">
+			<h3>Gdje se nalazimo?</h3>
+				<p class="paragraf">Klikom na sliku dobit ćete tačnu lokaciju našeg objekta: 
+					<span>
+						<a href="https://www.google.com/maps/place/Studentski+Servis/@44.5423193,18.6098174,13z/data=!4m9!1m2!2m1!1sstudentski+biro+tuzla!3m5!1s0x475ead1aa76c4ab3:0x1294bf9c4e4cd720!8m2!3d44.538084!4d18.6615668!15sChVzdHVkZW50c2tpIGJpcm8gdHV6bGGSARxzdHVkZW50c19zdXBwb3J0X2Fzc29jaWF0aW9u"> <br>
+						<img src="images/slika1.png" width="300" height="150"> </a> 
+					</span>
+				</p>
+		</div>
+	</main>
+
+	<aside class="aside">
+		<h3 class="aside-item">Gdje naši studenti imaju priliku da rade?</h3> <br>
+			<dl class="aside-item">
+				<dt>
+					Rad od kuće:
+				</dt>
+				<dd>Bavljenje web developmenta i programiranja u različitim programskim jezicima</dd>
+				<dd>Podučavanje stranih jezika</dd>
+				<dd>Ukoliko imate neke druge vještine javite se na formu postavljenu <a href="contact.html">ovdje.</a></dd>
+				<dt>Klasičan studentski posao u različitim prodavnicama.</dt>
+			</dl>
+	</aside>
+
+	<div class="div-for-image">
+		<img src="images/slika3.jpg" class="slika3">
+	</div>
+
+	<article class="article"> 
+		<h3 class="tb-item">Zašto baš mi?</h3>
+		<dl class="tb-item">
+			<dt>Ono što nudimo našim studentima je:</dt>
+				<dd>Rad od kuće za studente sa većim nivoom tehničkog znanja.</dd>
+				<dd>Obuhvatamo cijelu teritoriju Bosne i Hercegovine.</dd>
+				<dd>Podučavanje stranih jezika</dd>
+				<dd>Studentima nudimo mogućnost rada prema ugovoru, a za tu stavku detalje pogledajte na <a href="gallery.html">linku.</a></dd>
+			</dl>
+	</article>
+	<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+	<footer class="footer">
+		<h4>FAQ - često postavljena pitanja možete pronaći na<a href="about.html">linku.</a>Pronađite nas i na:</h4>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<a href="https://www.facebook.com/profile.php?id=100008333760911" class="fa fa-facebook"> Facebooku</a>
+		<a href="#" class="fa fa-twitter"> Twitteru</a>
+		<a href="#" class="fa fa-instagram"> Instagramu</a>	
+		
+		<p>Copyright &copy; 2021 by Majra. All rights reserved.</p>
+	</footer>
+
+</body>
+</html>
